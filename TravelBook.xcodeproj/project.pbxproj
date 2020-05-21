@@ -28,6 +28,7 @@
 		48F5E0F92475941D004E6B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48F5E0FB2475941D004E6B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48F5E10124768704004E6B60 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		48F5E10324769D71004E6B60 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 				48F5E0EA2475941B004E6B60 /* AppDelegate.swift */,
 				48F5E0EC2475941B004E6B60 /* SceneDelegate.swift */,
 				48F5E0EE2475941B004E6B60 /* ViewController.swift */,
+				48F5E10324769D71004E6B60 /* Location.gpx */,
 				48F5E0F02475941B004E6B60 /* Main.storyboard */,
 				48F5E10124768704004E6B60 /* ListViewController.swift */,
 				48F5E0F62475941D004E6B60 /* Assets.xcassets */,
