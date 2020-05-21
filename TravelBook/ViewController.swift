@@ -78,6 +78,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                                         mapView.addAnnotation(annotation)
                                         nameText.text = annotationTitle
                                         commentText.text = annotationSubtitle
+                                        
+                                        locationManager.stopUpdatingLocation()
+                                        
+                                        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+                                        let region = MKCoordinateRegion(center: coordinate, span: span)
+                                        mapView.setRegion(region, animated: true)
                                     }
                                 }
                             }
@@ -110,10 +116,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if selectedTitle != "" {
         let location = CLLocationCoordinate2DMake(locations[0].coordinate.latitude, locations[0].coordinate.latitude)
-        let span = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
+        } else {
+            
+        }
     }
     
     @IBAction func saveTapped(_ sender: Any) {
