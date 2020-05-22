@@ -93,7 +93,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         if segue.identifier == "show" {
             let destinationVC = segue.destination as! ViewController
             destinationVC.selectedTitle = chosenTitle
-            destinationVC.selectedTitleId = chosenTitleId
+            destinationVC.selectedTitleID = chosenTitleId
+
             
         }
     }
